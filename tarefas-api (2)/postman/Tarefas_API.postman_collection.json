@@ -1,0 +1,171 @@
+{
+  "info": {
+    "name": "Tarefas API",
+    "_postman_id": "e7a9c0a9-8d0c-4d0f-9b76-1234567890ab",
+    "description": "Coleção de requests para a Tarefas API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Criar tarefa - Desenvolvimento da API",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Desenvolvimento da API\",\n  \"dataEntrega\": \"2025-12-12\",\n  \"responsavel\": \"Nerilton_RU4606523\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/tarefas",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "tarefas"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Criar tarefa - Revisão de requisitos",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Revisão de requisitos\",\n  \"dataEntrega\": \"2025-11-30\",\n  \"responsavel\": \"Nerilton_RU4606523\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/tarefas",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "tarefas"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Criar tarefa - Documentar endpoints",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Documentar endpoints\",\n  \"dataEntrega\": \"2025-10-15\",\n  \"responsavel\": \"Nerilton_RU4606523\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/tarefas",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "tarefas"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Listar tarefas",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/api/tarefas",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "tarefas"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Buscar por ID (ex: 1)",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/api/tarefas/1",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "tarefas",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Atualizar tarefa (ex: id=1)",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Desenvolvimento da API - Atualizado\",\n  \"dataEntrega\": \"2025-12-12\",\n  \"responsavel\": \"Nerilton_RU4606523\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/tarefas/1",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "tarefas",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Excluir tarefa (ex: id=1)",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "{{baseUrl}}/api/tarefas/1",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "tarefas",
+            "1"
+          ]
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8080"
+    }
+  ]
+}
